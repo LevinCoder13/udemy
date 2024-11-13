@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .drop {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .drop_1 {
+            display: flex;
+            background-color: rgb(255, 123, 0);
+            padding: 20px;
+            justify-content: space-between;
+            list-style: none;
+
+        }
+
+        .drop_1 li a {
+            color: wheat;
+            font-size: 30px;
+            text-decoration: none;
+        }
+
+        .dropdown {
+            width: 160px;
+            padding: 0;
+            background-color: white;
+            text-align: center;
+            list-style: none;
+            position: absolute;
+            display: none;
+
+        }
+
+        .dropdown li a {
+            display: block;
+            color: black;
+
+        }
+
+        .dropdown li :hover {
+            background-color: orange;
+        }
+
+        .drop_2:hover .dropdown {
+            display: block;
+            transition: 2s;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="drop">
+        <ul class="drop_1">
+            <li><a href="#">home</a></li>
+            <li><a href="#">product</a></li>
+            <li class="drop_2"><a href="#">categorys</a>
+                <ul class="dropdown">
+                    <li><a href="#">snacks</a></li>
+                    <li><a href="#">fruit</a></li>
+                    <li><a href="#">baby care</a></li>
+                </ul>
+            </li>
+            <li><a href="#">my account</a></li>
+            <li><a href="#">contact us</a></li>
+
+        </ul>
+    </div>
+</body>
+
+</html>
